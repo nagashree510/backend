@@ -33,13 +33,8 @@ let email=req.email
 
 let insertuser=()=>{
     let query=`insert into users()values (${name},$)`
+    req.query
 }
-let getallusers=()=>{
-    let query=``
-    }
-app.get('/getalluser',(req,res)=>{
-    let result=getallusers();
-    res.status(200).send();
-})
+
 res.status(200).send({cnt:"cbt"});
 })
